@@ -4,11 +4,11 @@ public class NumberToBreakOn {
     public void printNumbersUntilWithBreakOn(int toBreakWith, int numberToGoUntil) {
 
         for (int i = 1; i <= numberToGoUntil; i++) {
-            if (numberToGoUntil > toBreakWith) {
+            if (numberToGoUntil <= toBreakWith) {
+                System.out.println(i);
+            } else if (numberToGoUntil > toBreakWith) {
                 System.out.println("iterating till the end");
                 break;
-            } else if (numberToGoUntil <= toBreakWith) {
-                System.out.println(i);
             }
         }
 
